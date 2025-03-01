@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>구진우님의 미니홈피 - Photo Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Pixelify+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="photos.css" />
+  </head>
+  <body>
+    <!-- Background can be changed by updating the background-image in CSS -->
+    <div class="background" id="customBackground">
+      <div class="cyworld-container photo-page">
+        <!-- Header with stats -->
+        <div class="cy-header">
+          <div class="cy-stats">
+            <div class="today-stats">
+              <span class="stat-label">TODAY</span>
+              <span class="stat-value">130</span>
+            </div>
+            <div class="total-stats">
+              <span class="stat-label">TOTAL</span>
+              <span class="stat-value">11180</span>
+            </div>
+          </div>
+          <div class="cy-title">구진우님의 미니홈피</div>
+          <div class="cy-url">http://www.cyworld.com/gujinwoo</div>
+        </div>
+
+        <!-- Main content area with 3 sections -->
+        <div class="cy-content">
+          <!-- Left profile section -->
+          <div class="cy-profile">
+            <div class="profile-header">
+              <span>TODAY IS...</span>
+              <span class="mood">😊 맑음</span>
+            </div>
+
+            <div class="profile-pic-container">
+              <div class="profile-pic">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'%3E%3Crect width='150' height='150' fill='%23f0f0f0'/%3E%3Ccircle cx='75' cy='65' r='25' fill='%23ffb6c1'/%3E%3Crect x='50' y='100' width='50' height='40' fill='%23ffb6c1'/%3E%3C/svg%3E"
+                  alt="Profile picture"
+                />
+              </div>
+            </div>
+
+            <div class="history-section">
+              <div class="history-header">
+                <h3>▶ HISTORY</h3>
+                <div class="scroll-buttons">
+                  <button>▲</button>
+                  <button>▼</button>
+                </div>
+              </div>
+              <div class="history-content">
+                <div class="history-item">
+                  <span class="history-name">구진우</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="add-history">
+              <button>파도타기</button>
+              <div class="dropdown-arrow">▼</div>
+            </div>
+          </div>
+
+          <!-- Middle photo gallery section -->
+          <div class="cy-photo-content">
+            <div class="photo-header">
+              <div class="photo-date">2025. 2. 21 12:00</div>
+              <div class="photo-controls">
+                <button class="home-button">홈</button>
+              </div>
+            </div>
+
+            <div class="photo-title">
+              <h2>Photo Story</h2>
+              <div class="photo-divider"></div>
+            </div>
+
+            <div class="photo-grid">
+              <div class="photo-row">
+                <div class="photo-item">
+                  <img
+                    src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='150' viewBox='0 0 200 150'%3E%3Crect width='200' height='150' fill='%23f0f0f0'/%3E%3Cpath d='M0,150 L200,150 L200,100 C150,120 50,120 0,100 Z' fill='%2370a1ff'/%3E%3Ccircle cx='100' cy='60' r='30' fill='%23ffcc80'/%3E%3C/svg%3E"
+                    alt="Beach scene"
+                  />
+                  <div class="photo-caption">친구들이랑</div>
+                </div>
+                <div class="photo-item">
+                  <img
+                    src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='150' viewBox='0 0 200 150'%3E%3Crect width='200' height='150' fill='%23f0f0f0'/%3E%3Cpath d='M0,150 L200,150 L200,70 L150,50 L100,70 L50,50 L0,70 Z' fill='%2373b175'/%3E%3Ccircle cx='160' cy='40' r='20' fill='%23ffcc80'/%3E%3C/svg%3E"
+                    alt="Countryside"
+                  />
+                  <div class="photo-caption">자유♥</div>
+                </div>
+              </div>
+              <div class="photo-row">
+                <div class="photo-item">
+                  <img
+                    src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='150' viewBox='0 0 200 150'%3E%3Crect width='200' height='150' fill='%23f0f0f0'/%3E%3Crect x='0' y='0' width='200' height='150' fill='%23dcdcdc'/%3E%3Crect x='20' y='30' width='160' height='90' fill='%23ffffff'/%3E%3Ccircle cx='100' cy='75' r='20' fill='%23c0c0c0'/%3E%3C/svg%3E"
+                    alt="School hallway"
+                  />
+                  <div class="photo-caption">고민 중...</div>
+                </div>
+                <div class="photo-item">
+                  <img
+                    src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='150' viewBox='0 0 200 150'%3E%3Crect width='200' height='150' fill='%23f0f0f0'/%3E%3Crect x='0' y='0' width='200' height='150' fill='%23e0e0e0'/%3E%3Cpath d='M40,150 L160,150 L160,60 L40,60 Z' fill='%23a0a0a0'/%3E%3Ccircle cx='100' cy='40' r='15' fill='%23f0f0f0'/%3E%3C/svg%3E"
+                    alt="Window view"
+                  />
+                  <div class="photo-caption">내 마음 따라려</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="comment-section">
+              <div class="comment-form">
+                <div class="comment-label">Friends say</div>
+                <input
+                  type="text"
+                  placeholder="글쓰고나누고싶으시다면남겨보세요..."
+                />
+                <button>확인</button>
+              </div>
+
+              <div class="comments-list">
+                <div class="comment">
+                  <p>
+                    오늘 날씨 공부하기도 한것같지 않았지? (산다
+                    <span class="friend-name">오진아</span>)
+                  </p>
+                </div>
+                <div class="comment">
+                  <p>
+                    오늘 책 빌려줘서 고마워! (산다
+                    <span class="friend-name">오진아</span>)
+                  </p>
+                </div>
+                <div class="comment">
+                  <p>
+                    우리 나중에 같이 공부 할래? (산다
+                    <span class="friend-name">구진우</span>)
+                  </p>
+                </div>
+                <div class="comment">
+                  <p>
+                    진우야날씨좋은 모습 그대로 즐겨해줘서 고마워, 사실 나도 너
+                    좋아해! (산다 <span class="friend-name">오진아</span>)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right control panel -->
+          <div class="cy-controls">
+            <div class="control-panel">
+              <div class="menu-buttons">
+                <a href="index.html" class="menu-button">홈피</a>
+                <a href="#" class="menu-button">프로필</a>
+                <a href="diary.html" class="menu-button">다이어리</a>
+                <a href="jukebox.html" class="menu-button">주크박스</a>
+                <a href="photos.html" class="menu-button active">사진첩</a>
+                <a href="#" class="menu-button">동영상</a>
+                <a href="#" class="menu-button">방명록</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer section -->
+        <div class="cy-footer">
+          <p>Copyright © 2025 hopecore. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
