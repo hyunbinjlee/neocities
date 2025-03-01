@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Cyworld Minihompy</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Pixelify+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Background can be changed by updating the background-image in CSS -->
+    <div class="background" id="customBackground">
+      <div class="cyworld-container">
+        <!-- Header with stats -->
+        <div class="cy-header">
+          <div class="cy-stats">
+            <div class="today-stats">
+              <span class="stat-label">TODAY</span>
+              <span class="stat-value">12</span>
+            </div>
+            <div class="total-stats">
+              <span class="stat-label">TOTAL</span>
+              <span class="stat-value">26287</span>
+            </div>
+          </div>
+          <div class="cy-title">사이좋은 사람들</div>
+          <div class="cy-url">http://www.cyworld.com/my_cyworld</div>
+        </div>
+
+        <!-- Main content area with 3 sections -->
+        <div class="cy-content">
+          <!-- Left profile section -->
+          <div class="cy-profile">
+            <div class="profile-header">
+              <span>TODAY IS...</span>
+              <span class="mood">😊 행복</span>
+            </div>
+
+            <div class="profile-pic-container">
+              <div class="profile-pic">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'%3E%3Crect width='150' height='150' fill='%23f0f0f0'/%3E%3Ccircle cx='75' cy='65' r='25' fill='%23ffb6c1'/%3E%3Crect x='50' y='100' width='50' height='40' fill='%23ffb6c1'/%3E%3C/svg%3E"
+                  alt="Profile picture"
+                />
+              </div>
+            </div>
+
+            <div class="profile-info">
+              <p class="profile-name">사이좋은 사람을 소개합니다</p>
+              <div class="history-section">
+                <div class="history-header">
+                  <h3>• HISTORY</h3>
+                  <div class="scroll-buttons">
+                    <button>▲</button>
+                    <button>▼</button>
+                  </div>
+                </div>
+                <div class="history-content">
+                  <!-- History entries will go here -->
+                </div>
+              </div>
+            </div>
+
+            <div class="mini-board">
+              <h3>미니홍보판 ▼</h3>
+              <p class="url">http://www.cyworld.com/my_board</p>
+            </div>
+          </div>
+
+          <!-- Middle miniroom section -->
+          <div class="cy-miniroom">
+            <div class="miniroom-header">
+              <div class="update-section">
+                <h2>Updated news</h2>
+                <ul class="update-list">
+                  <li>
+                    <span class="update-category">[스크랩]</span> "미니홈피 BGM
+                    2021"
+                  </li>
+                  <li>
+                    <span class="update-category">[스크랩]</span> 미니홈피
+                    컬러닷 번째 가장자
+                  </li>
+                  <li>
+                    <span class="update-category">[스크랩]</span> 유주 '나의
+                    겨울로' 다가오다
+                  </li>
+                  <li>
+                    <span class="update-category">[스크랩]</span> 초성모,
+                    파리의번안 OST
+                  </li>
+                </ul>
+              </div>
+
+              <div class="miniroom-tabs">
+                <div class="tab active">Miniroom</div>
+                <div class="tab">Miniroom2</div>
+                <div class="tab">Storyroom</div>
+              </div>
+            </div>
+
+            <div class="miniroom-display">
+              <div class="miniroom-image">
+                <!-- Miniroom illustration -->
+                <div class="isometric-room">
+                  <div class="room-wall left"></div>
+                  <div class="room-wall right"></div>
+                  <div class="room-floor"></div>
+                  <div class="room-item bed"></div>
+                  <div class="room-item desk"></div>
+                  <div class="room-item chair"></div>
+                  <div class="room-item bookshelf"></div>
+                  <div class="room-item window"></div>
+                  <div class="room-item cabinet"></div>
+                  <div class="room-item character"></div>
+                </div>
+              </div>
+              <div class="miniroom-title">우리 사적해도 되겠니?</div>
+            </div>
+
+            <div class="comments-section">
+              <h3>What friends say ʕ•ᴥ•ʔ 속닥속닥~</h3>
+              <div class="comments-list">
+                <div class="comment">
+                  <p>너를 사랑해도 되겠니 (그런데싶 조성모)</p>
+                </div>
+                <div class="comment">
+                  <p>우리 시작해도 되겠니 (질리 유주)</p>
+                </div>
+                <div class="comment">
+                  <p>
+                    나의 심장 맘은 가득이 너를 향해 달라고 (전재한국가 며룐)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right control panel -->
+          <div class="cy-controls">
+            <div class="control-panel">
+              <div class="panel-section status">
+                <h3>파이멘트 좀</h3>
+                <div class="status-bars">
+                  <div class="status-item">
+                    <span>고독</span>
+                    <div class="status-bar">
+                      <div class="bar-fill red" style="width: 80%"></div>
+                    </div>
+                    <span>9</span>
+                  </div>
+                  <div class="status-item">
+                    <span>슬픔</span>
+                    <div class="status-bar">
+                      <div class="bar-fill orange" style="width: 60%"></div>
+                    </div>
+                    <span>6</span>
+                  </div>
+                  <div class="status-item">
+                    <span>상쾌</span>
+                    <div class="status-bar">
+                      <div class="bar-fill blue" style="width: 40%"></div>
+                    </div>
+                    <span>4</span>
+                  </div>
+                </div>
+
+                <div class="weather-section">
+                  <h4>미니미일기</h4>
+                  <div class="weather-icons">
+                    <span class="weather-icon">☀️</span>
+                    <span class="weather-icon">☁️</span>
+                    <span class="weather-icon">🔨</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu-buttons">
+                <div class="menu-button active">홈피</div>
+                <div class="menu-button">프로필</div>
+                <div class="menu-button">다이어리</div>
+                <div class="menu-button">주크박스</div>
+                <div class="menu-button">사진첩</div>
+                <div class="menu-button">게시판</div>
+                <div class="menu-button">방명록</div>
+              </div>
+
+              <div class="friends-section">
+                <h3>일촌평</h3>
+                <div class="friend-message">
+                  <p>너의 겨울로 - 유주</p>
+                </div>
+
+                <div class="music-player">
+                  <h3>BGM</h3>
+                  <div class="music-selection">
+                    <div class="music-thumbnail">
+                      <img
+                        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E%3Crect width='50' height='50' fill='%23333'/%3E%3Ccircle cx='25' cy='25' r='10' fill='%23f0f0f0'/%3E%3C/svg%3E"
+                        alt="Album art"
+                      />
+                    </div>
+                    <div class="music-info">
+                      <p class="music-title">너의 겨울로</p>
+                      <p class="music-artist">유주</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="friend-thumbnails">
+                  <div class="friend">
+                    <img
+                      src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E%3Crect width='50' height='50' fill='%23f0f0f0'/%3E%3Ccircle cx='25' cy='25' r='15' fill='%23ffb6c1'/%3E%3C/svg%3E"
+                      alt="Friend"
+                    />
+                    <span>JISUNHO</span>
+                  </div>
+                  <div class="friend">
+                    <img
+                      src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E%3Crect width='50' height='50' fill='%23f0f0f0'/%3E%3Ccircle cx='25' cy='25' r='15' fill='%23a0d6b4'/%3E%3C/svg%3E"
+                      alt="Friend"
+                    />
+                    <span>YUJU</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer section -->
+        <div class="cy-footer">
+          <p>Copyright © 2025 hopecore. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

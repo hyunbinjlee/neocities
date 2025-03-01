@@ -1,0 +1,643 @@
+/* Base styles and reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 12px;
+  color: #333;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Background styling */
+.background {
+  background-image: url("luckystar2.jpg");
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Main container */
+.cyworld-container {
+  width: 100%;
+  max-width: 900px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header styling */
+.cy-header {
+  background: white;
+  padding: 8px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.cy-stats {
+  display: flex;
+  gap: 10px;
+}
+
+.today-stats,
+.total-stats {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.stat-label {
+  font-weight: bold;
+  font-size: 11px;
+  color: #666;
+}
+
+.stat-value {
+  color: #ff6b6b;
+  font-weight: bold;
+}
+
+.cy-title {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.cy-url {
+  font-size: 10px;
+  color: #888;
+}
+
+/* Main content layout */
+.cy-content {
+  display: flex;
+  height: 550px;
+  border: 2px solid #ccc;
+  margin: 10px;
+  background: #f9f9f9;
+}
+
+/* Profile section */
+.cy-profile {
+  width: 200px;
+  background: white;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.profile-header {
+  background: #f2f2f2;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+}
+
+.profile-pic-container {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-info {
+  padding: 10px;
+}
+
+.profile-name {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.history-section {
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+.history-header {
+  background: #f2f2f2;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.history-header h3 {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.scroll-buttons {
+  display: flex;
+  gap: 2px;
+}
+
+.scroll-buttons button {
+  border: 1px solid #ddd;
+  background: white;
+  width: 18px;
+  height: 18px;
+  font-size: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.history-content {
+  padding: 5px;
+  height: 80px;
+  overflow-y: auto;
+}
+
+.mini-board {
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  margin-top: auto;
+}
+
+.mini-board h3 {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.url {
+  font-size: 9px;
+  color: #888;
+}
+
+/* Miniroom section */
+.cy-miniroom {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-right: 1px solid #ddd;
+}
+
+.miniroom-header {
+  border-bottom: 1px solid #ddd;
+}
+
+.update-section {
+  padding: 10px;
+}
+
+.update-section h2 {
+  font-size: 14px;
+  color: #4a86e8;
+  margin-bottom: 5px;
+}
+
+.update-list {
+  list-style-type: none;
+}
+
+.update-list li {
+  margin-bottom: 3px;
+  font-size: 11px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.update-list li:before {
+  content: "•";
+  margin-right: 5px;
+}
+
+.update-category {
+  color: #ff6b6b;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.miniroom-tabs {
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+.tab {
+  padding: 5px 15px;
+  border-right: 1px solid #ddd;
+  cursor: pointer;
+  background: #f2f2f2;
+}
+
+.tab.active {
+  background: #66a3ff;
+  color: white;
+}
+
+.miniroom-display {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  position: relative;
+}
+
+.miniroom-image {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Isometric room styling */
+.isometric-room {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: rotate(45deg) skew(20deg, -10deg);
+  transform-origin: 50% 50%;
+}
+
+.room-wall {
+  position: absolute;
+  background: #e2e9f3;
+  height: 70%;
+  width: 50%;
+  bottom: 40%;
+}
+
+.room-wall.left {
+  left: 10%;
+  background: #d3e0f7;
+}
+
+.room-wall.right {
+  right: 10%;
+  background: #c3d5f5;
+}
+
+.room-floor {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  width: 80%;
+  height: 60%;
+  background: #f0f5ff;
+  transform: skew(0deg, -10deg);
+}
+
+.room-item {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.room-item.bed {
+  width: 30%;
+  height: 20%;
+  right: 20%;
+  bottom: 25%;
+  background-color: #ffd1dc;
+  transform: skew(0deg, -10deg);
+}
+
+.room-item.desk {
+  width: 20%;
+  height: 15%;
+  left: 20%;
+  bottom: 25%;
+  background-color: #d2b48c;
+  transform: skew(0deg, -10deg);
+}
+
+.room-item.chair {
+  width: 10%;
+  height: 10%;
+  left: 25%;
+  bottom: 20%;
+  background-color: #a58576;
+  transform: skew(0deg, -10deg);
+}
+
+.room-item.bookshelf {
+  width: 15%;
+  height: 30%;
+  left: 15%;
+  bottom: 40%;
+  background-color: #8b7355;
+}
+
+.room-item.window {
+  width: 20%;
+  height: 20%;
+  right: 25%;
+  bottom: 60%;
+  background-color: #add8e6;
+  border: 2px solid #ffffff;
+}
+
+.room-item.cabinet {
+  width: 15%;
+  height: 15%;
+  right: 15%;
+  bottom: 30%;
+  background-color: #deb887;
+  transform: skew(0deg, -10deg);
+}
+
+.room-item.character {
+  width: 10%;
+  height: 15%;
+  left: 45%;
+  bottom: 25%;
+  background-color: #ffb7c5;
+  transform: skew(0deg, -10deg);
+}
+
+.miniroom-title {
+  padding: 10px;
+  text-align: center;
+  color: #4a86e8;
+  background: #f2f2f2;
+  border-top: 1px solid #ddd;
+}
+
+.comments-section {
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.comments-section h3 {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.comments-list {
+  font-size: 11px;
+}
+
+.comment {
+  margin-bottom: 5px;
+  line-height: 1.3;
+}
+
+/* Control panel */
+.cy-controls {
+  width: 200px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.control-panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.panel-section {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.panel-section h3 {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.status-bars {
+  margin-bottom: 10px;
+}
+
+.status-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+.status-bar {
+  flex-grow: 1;
+  height: 8px;
+  background: #eee;
+  border: 1px solid #ddd;
+}
+
+.bar-fill {
+  height: 100%;
+}
+
+.bar-fill.red {
+  background: linear-gradient(to right, #ff6b6b, #ffb6b9);
+}
+
+.bar-fill.orange {
+  background: linear-gradient(to right, #ffa502, #ffd56b);
+}
+
+.bar-fill.blue {
+  background: linear-gradient(to right, #70a1ff, #1e90ff);
+}
+
+.weather-section h4 {
+  font-size: 11px;
+  margin-bottom: 5px;
+}
+
+.weather-icons {
+  display: flex;
+  gap: 5px;
+}
+
+.weather-icon {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.menu-buttons {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu-button {
+  padding: 8px 10px;
+  border: none;
+  border-bottom: 1px solid #eee;
+  background: #f5f5f5;
+  text-align: left;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.menu-button:last-child {
+  border-bottom: none;
+}
+
+.menu-button.active {
+  background: #4a86e8;
+  color: white;
+}
+
+.menu-button:hover {
+  background: #e0ecff;
+}
+
+.friends-section {
+  padding: 10px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.friend-message {
+  margin-bottom: 10px;
+  padding: 5px;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  font-size: 11px;
+}
+
+.music-player {
+  margin-bottom: 10px;
+}
+
+.music-player h3 {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.music-selection {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+}
+
+.music-thumbnail {
+  width: 30px;
+  height: 30px;
+}
+
+.music-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.music-info {
+  font-size: 10px;
+}
+
+.music-title {
+  font-weight: bold;
+}
+
+.friend-thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.friend {
+  width: 50px;
+  text-align: center;
+}
+
+.friend img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+}
+
+.friend span {
+  font-size: 9px;
+  display: block;
+  margin-top: 2px;
+}
+
+/* Footer styling */
+.cy-footer {
+  background: #f5f5f5;
+  padding: 8px;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  font-size: 10px;
+  color: #666;
+}
+
+/* To make the buttons display correctly */
+.menu-buttons button {
+  display: block;
+  width: 100%;
+  margin-bottom: 1px;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .cyworld-container {
+    max-width: 100%;
+  }
+
+  .cy-content {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .cy-profile,
+  .cy-controls {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+/* Animation for profile picture */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.profile-pic img {
+  animation: float 3s ease-in-out infinite;
+}
