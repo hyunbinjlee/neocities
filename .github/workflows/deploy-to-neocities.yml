@@ -21,6 +21,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       # Set up any tools and build steps here
+      # This example uses a Node.js toolchain to build a site
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.node_version }}
+      - run: npm i
+      - run: npm run build
+      - run: ls -la public
       # When the dist_dir is ready, deploy it to neocities
       - name: Deploy to neocities
         uses: bcomnes/deploy-to-neocities@master # dont use master in production
@@ -30,4 +38,4 @@ jobs:
           dist_dir: public
           protected_files: "dropbox/*"
           neocities_supporter: true # set this to true if you have a supporter account and want to bypass unsuported files filter.
-          preview_before_deploy: true
+          preview_before_deploy: false
